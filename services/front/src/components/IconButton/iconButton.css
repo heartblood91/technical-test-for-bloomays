@@ -1,0 +1,16 @@
+.iconButton {
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffff;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.iconButton:hover {
+    background-color: #f2f2f2;
+}
+
+.iconButton:active {
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}

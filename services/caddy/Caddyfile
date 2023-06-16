@@ -1,0 +1,9 @@
+# public_account
+localhost {
+	reverse_proxy app:3000
+	encode gzip
+}
+api.localhost
+	reverse_proxy api:4000
+	encode gzip
+}

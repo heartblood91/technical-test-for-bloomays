@@ -1,0 +1,10 @@
+{
+  "arriving": {
+    "singular": "bloomer entrant",
+    "plural": "bloomers entrants"
+  },
+  "leaving": {
+    "singular": "bloomer sortant",
+    "plural": "bloomers sortants"
+  }
+}

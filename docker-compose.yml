@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  caddy:
+    build:
+      context: ./services/caddy
+    container_name: "cadddy"
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    networks:
+      - public
+
+  app:
+    build:
+      context: ./services/front
+    container_name: "app"
+    restart: always
+    volumes:
+      - ./services/front:/workdir
+    ports:
+      - '3000:3000'
+    networks:
+      - public
+
+  api:
+    build:
+      context: ./services/back
+    restart: always
+    container_name: "api"
+    volumes:
+      - ./services/back:/workdir
+    environment:
+      - BLOOMAYS_AIRTABLE_TOKEN=${BLOOMAYS_AIRTABLE_TOKEN}
+      - BLOOMAYS_AIRTABLE_BASE_ID=${BLOOMAYS_AIRTABLE_BASE_ID}
+      - BLOOMAYS_API_PORT=${BLOOMAYS_API_PORT}
+      - BLOOMAYS_APP_URL=${BLOOMAYS_APP_URL}
+      - BLOOMAYS_APP_PORT=${BLOOMAYS_APP_PORT}
+    ports:
+      - '4000:4000'
+    networks:
+      - public
+
+networks:
+  public:
+    driver: bridge

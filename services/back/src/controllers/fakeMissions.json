@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "label": "Mission 1",
+    "beginDate": "2023-06-15",
+    "endDate": "2022-12-31",
+    "missionType": "Type 1",
+    "freelance": {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john.doe@example.com"
+    }
+  },
+  {
+    "id": 2,
+    "label": "Mission 2",
+    "beginDate": "2023-06-01",
+    "endDate": "2022-12-31",
+    "missionType": "Type 2",
+    "freelance": {
+      "id": 2,
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "email": "jane.smith@example.com"
+    }
+  },
+  {
+    "id": 3,
+    "label": "Mission 3",
+    "beginDate": "2023-07-10",
+    "endDate": "2022-12-31",
+    "missionType": "Type 3",
+    "freelance": {
+      "id": 3,
+      "firstname": "Alice",
+      "lastname": "Johnson",
+      "email": "alice.johnson@example.com"
+    }
+  },
+  {
+    "id": 4,
+    "label": "Mission 4",
+    "beginDate": "2023-07-05",
+    "endDate": "2022-12-31",
+    "missionType": "Type 4",
+    "freelance": {
+      "id": 4,
+      "firstname": "Bob",
+      "lastname": "Williams",
+      "email": "bob.williams@example.com"
+    }
+  },
+  {
+    "id": 5,
+    "label": "Mission 5",
+    "beginDate": "2023-06-25",
+    "endDate": "2022-12-31",
+    "missionType": "Type 5",
+    "freelance": {
+      "id": 5,
+      "firstname": "Emma",
+      "lastname": "Davis",
+      "email": "emma.davis@example.com"
+    }
+  },
+  {
+    "id": 6,
+    "label": "Mission 6",
+    "beginDate": "2023-01-01",
+    "endDate": "2023-07-15",
+    "missionType": "Type 6",
+    "freelance": {
+      "id": 6,
+      "firstname": "Michael",
+      "lastname": "Brown",
+      "email": "michael.brown@example.com"
+    }
+  },
+  {
+    "id": 7,
+    "label": "Mission 7",
+    "beginDate": "2023-01-01",
+    "endDate": "2023-07-05",
+    "missionType": "Type 7",
+    "freelance": {
+      "id": 7,
+      "firstname": "Sophia",
+      "lastname": "Johnson",
+      "email": "sophia.johnson@example.com"
+    }
+  },
+  {
+    "id": 8,
+    "label": "Mission 8",
+    "beginDate": "2023-01-01",
+    "endDate": "2023-06-30",
+    "missionType": "Type 8",
+    "freelance": {
+      "id": 8,
+      "firstname": "Liam",
+      "lastname": "Martinez",
+      "email": "liam.martinez@example.com"
+    }
+  },
+  {
+    "id": 9,
+    "label": "Mission 9",
+    "beginDate": "2023-01-01",
+    "endDate": "2023-06-15",
+    "missionType": "Type 9",
+    "freelance": {
+      "id": 9,
+      "firstname": "Olivia",
+      "lastname": "Taylor",
+      "email": "olivia.taylor@example.com"
+    }
+  },
+  {
+    "id": 10,
+    "label": "Mission 10",
+    "beginDate": "2023-01-01",
+    "endDate": "2023-07-10",
+    "missionType": "Type 10",
+    "freelance": {
+      "id": 10,
+      "firstname": "Noah",
+      "lastname": "Lee",
+      "email": "noah.lee@example.com"
+    }
+  },
+  {
+    "id": 11,
+    "label": "Mission 11",
+    "beginDate": "2022-05-20",
+    "endDate": "2022-12-15",
+    "missionType": "Type 11",
+    "freelance": {
+      "id": 11,
+      "firstname": "Ava",
+      "lastname": "Wilson",
+      "email": "ava.wilson@example.com"
+    }
+  },
+  {
+    "id": 12,
+    "label": "Mission 12",
+    "beginDate": "2022-08-10",
+    "endDate": "2022-11-30",
+    "missionType": "Type 12",
+    "freelance": {
+      "id": 12,
+      "firstname": "James",
+      "lastname": "Anderson",
+      "email": "james.anderson@example.com"
+    }
+  },
+  {
+    "id": 13,
+    "label": "Mission 13",
+    "beginDate": "2022-09-01",
+    "endDate": "2022-10-31",
+    "missionType": "Type 13",
+    "freelance": {
+      "id": 13,
+      "firstname": "Emily",
+      "lastname": "Thompson",
+      "email": "emily.thompson@example.com"
+    }
+  },
+  {
+    "id": 14,
+    "label": "Mission 14",
+    "beginDate": "2022-04-15",
+    "endDate": "2022-12-31",
+    "missionType": "Type 14",
+    "freelance": {
+      "id": 14,
+      "firstname": "William",
+      "lastname": "Harris",
+      "email": "william.harris@example.com"
+    }
+  },
+  {
+    "id": 15,
+    "label": "Mission 15",
+    "beginDate": "2022-11-01",
+    "endDate": "2023-01-31",
+    "missionType": "Type 15",
+    "freelance": {
+      "id": 15,
+      "firstname": "Isabella",
+      "lastname": "Clark",
+      "email": "isabella.clark@example.com"
+    }
+  }
+]
