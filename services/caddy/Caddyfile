@@ -1,9 +1,11 @@
-# public_account
 localhost {
 	reverse_proxy app:3000
 	encode gzip
 }
-api.localhost
+api.localhost {
+    header {
+        X-Forwarded-For {remote_host}
+    }
 	reverse_proxy api:4000
 	encode gzip
 }

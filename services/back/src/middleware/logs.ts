@@ -4,7 +4,8 @@ const logs = (req: Request, res: Response, next: NextFunction) => {
   const startTime = Date.now()
 
   const logRequest = () => {
-    const { ip, method, originalUrl, headers } = req
+    const {  method, originalUrl, headers } = req
+    const ip = headers['x-forwarded-for'] || req.socket.remoteAddress
     const { statusCode } = res
     const responseTime = Date.now() - startTime
     const language = headers['accept-language']
@@ -14,7 +15,6 @@ const logs = (req: Request, res: Response, next: NextFunction) => {
     )
   }
   res.on('finish', logRequest)
-  res.on('close', logRequest)
 
   next()
 }
