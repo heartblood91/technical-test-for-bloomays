@@ -14,6 +14,7 @@ app.use(compression())
 app.use(bodyParser.json({ type: '*/*' }) as Application)
 
 if (process.env.NODE_ENV?.trim() !== 'development') {
+  app.set('trust proxy', 1)
   app.use(helmet() as Application)
 }
 
