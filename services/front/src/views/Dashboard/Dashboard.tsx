@@ -62,6 +62,9 @@ const useDashboard = () => {
         setMissions(nextMissions)
       } catch (error) {
         console.error(error)
+        throw new Error(
+          'Error while fetching missions, see console for more details.\nFile: src/views/Dashboard/Dashboard.tsx\n'
+        )
       }
     }
 

@@ -6,10 +6,13 @@ RUN apt-get update && apt-get install -y \
   nano \
   && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /workdir
+COPY ./deployment-script/docker-entrypoint.sh /
+RUN chmod +x docker-entrypoint.sh
 
+WORKDIR /tmp
 COPY ./package*.json ./
 
 RUN npm install
 
-CMD ["npm", "run", "watch"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["dev"]
